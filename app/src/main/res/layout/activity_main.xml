@@ -25,43 +25,39 @@
         app:layout_constraintTop_toBottomOf="@+id/result"
         app:layout_constraintVertical_bias="1.0" />
 
-    <EditText
-        android:id="@+id/inputN"
-        android:layout_width="414dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="Введите натуральное число n"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/inputA"
-        android:layout_width="414dp"
-        android:layout_height="52dp"
-        android:ems="10"
-        android:hint="Введите действительное число a"
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/result"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputN"
-        app:layout_constraintVertical_bias="0.062" />
-
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="339dp"
         android:layout_marginBottom="373dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputN"
+        android:layout_width="359dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="32dp"
+        android:hint="Введите натральное число n"
+        app:layout_constraintBottom_toTopOf="@+id/inputA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputA"
+        android:layout_width="359dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="160dp"
+        android:hint="Введите действительное число a"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
