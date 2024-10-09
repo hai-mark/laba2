@@ -58,7 +58,11 @@ class MainActivity : AppCompatActivity() {
         var sum = 0.0
 
         for (i in 0..n) {
-            sum += 1 / (a * (a + i))
+            var denominator = a // Начинаем с a
+            for (j in 1..i) {
+                denominator *= (a + j) // Умножаем на (a + j) для каждого j от 1 до i
+            }
+            sum += 1 / denominator // Добавляем к сумме
         }
 
         return sum
